@@ -30,45 +30,65 @@ inquirer.prompt([
       },
       {
         type: "input",
-        message: "Are others allowed to contribute to this project via pull requests? If so, what and how can they contribute?",
+        message: "Who are the contributors for this project? How can others contribute?",
         name: "contributions"
       },
       {
         type: "input",
-        message: "Provide example how to run the code:",
-        name: "tests"
+        message: "What is your github username?",
+        name: "username"
       },
       {
         type: "input",
-        message: "Please provide details on how user should contact you about questions/issues:",
-        name: "questions"
+        message: "What is your email address?",
+        name: "email"
       }
       
 ]).then(function(answers){
     console.log(answers);
 
-    let readme = `# ${answers.title}
+    let readme =`# ${answers.title}
+![License](https://img.shields.io/badge/License-${answers.licenses}-blue)
     
-    ${answers.description}
+${answers.description}
+
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributions](#contributions)
+- [Test](#test)
+- [Questions](#questions)
+
     
-    ## Installation
-    ${answers.installation}
+## <a name="installation">Installation</a>
+
+${answers.installation}
     
-    ## Usage
-    ${answers.usage}
+## <a name="usage">Usage</a>
+
+${answers.usage}
     
-    ## Licenses
-    ![License](https://img.shields.io/badge/License-${answers.licenses}-blue)
+## <a name="license">License</a>
+
+![License](https://img.shields.io/badge/License-${answers.licenses}-blue)
     
-    ## Contributions
-    ${answers.contributions}
+## <a name="contributions">Contributions</a>
+
+${answers.contributions}
     
-    ## Test
-    ${answers.tests}
-    
-    ## Questions
-    ${answers.questions}`;
-    fs.writeFile("README.md", readme, function(err){
+## <a name="test">Test</a>
+
+Please see a demo of the project below:
+![Demo]()
+
+## <a name="questions">Questions</a>
+
+${answers.username}
+Please send all questions about this code or any other of my projects to ${answers.email}`;
+
+
+fs.writeFile("README.md", readme, function(err){
         if(err) {
             return console.log(err);
         }
