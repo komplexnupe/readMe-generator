@@ -1,7 +1,7 @@
-# readMe Generator
+# README Generator
 ![License](https://img.shields.io/badge/License-MIT-blue)
     
-This readme generator prompts developers with a series of prompts utilizing inquirer npm to assist them with create great readMe for their projects. 
+This readme generator prompts developers/users with a series of prompts/questions utilizing inquirer to assit them with creating a great readme for their projects. 
 
 ## Table of Contents
 - [Installation](#installation)
@@ -18,7 +18,7 @@ npm install
     
 ## <a name="usage">Usage</a>
 
-Download this program/code prior to pushing your code to github.
+Download this code prior to pushing your project to a repo.
     
 ## <a name="license">License</a>
 
@@ -26,14 +26,15 @@ Download this program/code prior to pushing your code to github.
     
 ## <a name="contributions">Contributions</a>
 
-Leonard Love. Pull request are welcome, but please open issues first to discuss changes.
+Leonard Love. Pull requests are welcome, but please open an issue first to discuss changes.
     
 ## <a name="test">Test</a>
 
 Please see a demo of the project below:
-![Demo]()
+![Demo](assets/images/ReadME_Demo.gif)
 
 ## <a name="questions">Questions</a>
 
-komplexnupe
-Please send all questions about this code or any other of my projects to leoanrd.love87@icloud.com
+https://github.com/komplexnupe
+
+Please send all questions about this code or any other of my projects to leonard.love87@icloud.com

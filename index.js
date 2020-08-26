@@ -80,11 +80,12 @@ ${answers.contributions}
 ## <a name="test">Test</a>
 
 Please see a demo of the project below:
-![Demo]()
+![Demo](assets/images/ReadME_Demo.gif)
 
 ## <a name="questions">Questions</a>
 
-${answers.username}
+https://github.com/${answers.username}
+
 Please send all questions about this code or any other of my projects to ${answers.email}`;
 
 
